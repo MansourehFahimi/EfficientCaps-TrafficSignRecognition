@@ -1,7 +1,7 @@
 DATASET INFORMATION
 
 Project: EfficientCaps — Degraded Traffic Sign Recognition
-Name:  Mansoureh Fahimi | Student ID: 2359226
+Author:  Mansoureh Fahimi
 ----------------------------------------------------------------------
 DATASET: German Traffic Sign Recognition Benchmark (GTSRB)
 ----------------------------------------------------------------------
@@ -24,8 +24,6 @@ HuggingFace (used in this project — loaded automatically by the notebook):
   https://huggingface.co/datasets/tanganke/gtsrb
 Official GTSRB website:
   https://benchmark.ini.rub.de/gtsrb_news.html
-Cached version on Google Drive (shared):
-  https://drive.google.com/drive/folders/1rfRzIIcTK-q2oNKZAm-N2q_MbPVhLfCx?usp=sharing
 ----------------------------------------------------------------------
 HOW THE DATASET IS LOADED
 ----------------------------------------------------------------------
