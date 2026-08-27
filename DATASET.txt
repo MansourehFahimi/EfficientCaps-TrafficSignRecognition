@@ -1,0 +1,55 @@
+DATASET INFORMATION
+
+Project: EfficientCaps — Degraded Traffic Sign Recognition
+Name:  Mansoureh Fahimi | Student ID: 2359226
+----------------------------------------------------------------------
+DATASET: German Traffic Sign Recognition Benchmark (GTSRB)
+----------------------------------------------------------------------
+Description:
+  GTSRB is a large-scale, real-world traffic sign classification dataset
+  collected from German roads. It is the standard benchmark for traffic
+  sign recognition research.
+
+Classes:       43 traffic sign categories
+Total images:  51,839
+  - Training:  39,209 images (35,289 used for training after val split)
+  - Validation: 3,920 images (10% held out from training for model selection)
+  - Test:      12,630 images
+Image size:    Variable in original; resized to 48×48 in this project
+Color:         RGB (3 channels)
+----------------------------------------------------------------------
+ACCESS LINKS
+----------------------------------------------------------------------
+HuggingFace (used in this project — loaded automatically by the notebook):
+  https://huggingface.co/datasets/tanganke/gtsrb
+Official GTSRB website:
+  https://benchmark.ini.rub.de/gtsrb_news.html
+Cached version on Google Drive (shared):
+  https://drive.google.com/drive/folders/1rfRzIIcTK-q2oNKZAm-N2q_MbPVhLfCx?usp=sharing
+----------------------------------------------------------------------
+HOW THE DATASET IS LOADED
+----------------------------------------------------------------------
+The notebook loads GTSRB automatically from HuggingFace using:
+    from datasets import load_dataset
+    ds = load_dataset("tanganke/gtsrb")
+On first run, the dataset is downloaded and cached to Google Drive at:
+    TrafficSign_EfficientCaps/cashe/tanganke_gtsrb_saved_to_disk/
+On all subsequent runs, it is loaded from the Drive cache — no
+re-downloading is needed.
+The cache folder is shared across all model versions (V1, V2, V3)
+so the dataset is only ever downloaded once.
+The dataset is NOT included in this submission ZIP to avoid large file
+sizes, as it is freely and publicly available via the links above.
+----------------------------------------------------------------------
+NORMALIZATION STATISTICS (computed from GTSRB training set)
+----------------------------------------------------------------------
+Mean: [0.3337, 0.3064, 0.3171]  (R, G, B)
+Std:  [0.2672, 0.2564, 0.2629]  (R, G, B)
+----------------------------------------------------------------------
+LICENSE
+----------------------------------------------------------------------
+GTSRB is publicly available for research and educational use.
+Original paper:
+  Stallkamp, J., Schlipsing, M., Salmen, J., & Igel, C. (2012).
+  Man vs. computer: Benchmarking machine learning algorithms for
+  traffic sign recognition. Neural Networks, 32, 323-332.
