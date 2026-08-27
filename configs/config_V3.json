@@ -2,7 +2,6 @@
   "project": {
     "name": "EfficientCaps — Degraded Traffic Sign Recognition",
     "author": "Mansoureh Fahimi",
-    "student_id": "2359226",
     "version": "V3"
   },
   "model": {
